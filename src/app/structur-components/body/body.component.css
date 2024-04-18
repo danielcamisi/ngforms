@@ -1,0 +1,25 @@
+.space{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    
+    padding: 20px;
+}
+.button-position{
+    padding-left: 20px;
+}
+.form-position{
+    padding: 75px;
+}
+.img-width{
+
+    width: 150px;
+    height: 100px;
+}
+.div-img{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,36 @@
+<p-card class="form-position">
+     <form [formGroup]="useForm" (ngSubmit)="addUser()">
+        <!-- <h1 
+        style=
+        "
+         display: flex;
+         color:red;
+         justify-content: center;
+         width: 50px;
+         height: 50px;
+        ">
+        </h1> -->
+        <div class="div-img">
+            <img class="img-width" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bugatti_logo.svg/2560px-Bugatti_logo.svg.png">
+        </div>
+        <div class="space">
+        <label for="name" class="block">Usuário</label>
+        <input type="text" pInputTextarea placeholder="Nome de usuário" formControlName="name"/>
+    </div>
+        <div class="space"> 
+            <label for="name" class="block">Senha</label>
+            <input type="text" pInputTextarea placeholder="Senha" formControlName="pword"/>
+        </div>
+         <p-button 
+            class="button-position" 
+            label="Logar" 
+            [disabled]="useForm.invalid"
+            (onClick)="showDialog()">
+            <p-dialog [(visible)]="visible" [modal]="true" [draggable]="false" [resizable]="false">
+                <p class="m-0">
+                    Login efetuado com Sucesso!
+                </p>
+                </p-dialog>
+        </p-button>
+     </form> 
+</p-card>   
